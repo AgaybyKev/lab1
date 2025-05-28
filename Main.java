@@ -9,8 +9,20 @@ public class Main {
         Motorcycle m2 = new Motorcycle("Yamaha", "MT-09", 2022, 847.0, "Black", frame1, front, back);
         Motorcycle m3 = new Motorcycle("Suzuki", "GSX-R750", 2019, 750.0, "Blue", frame1, front, back);
 
+        // Simulate motorcycle actions
+        m1.start();
+        m1.accelerate(40);
+        m1.brake();
         printMotorcycle(m1);
+
+        m2.start();
+        m2.accelerate(60);
+        m2.brake();
         printMotorcycle(m2);
+
+        m3.start();
+        m3.accelerate(50);
+        m3.brake();
         printMotorcycle(m3);
     }
 
@@ -26,3 +38,4 @@ public class Main {
         System.out.println("-------------------------------");
     }
 }
+
