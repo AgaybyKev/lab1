@@ -35,7 +35,7 @@ public class Main {
         System.out.println("Frame Material: " + m.getFrame().getMaterial().getName());
         System.out.println("Front Wheel Size: " + m.getWheels()[0].getSize());
         System.out.println("Back Wheel Size: " + m.getWheels()[1].getSize());
+        System.out.println("Fuel Tank: " + m.getFuelTank());
         System.out.println("-------------------------------");
     }
 }
-

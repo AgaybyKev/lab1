@@ -16,11 +16,15 @@ public class Motorcycle {
     private final String color;
     private final Frame frame;
     private final Wheel[] wheels;
+    private Tire frontTire;
+    private Tire backTire;
 
     /**
      * The current speed of the motorcycle in miles per hour.
      */
     private double currentSpeed;
+
+    private FuelTank fuelTank;
 
     /**
      * Constructor for Motorcycle.
@@ -43,7 +47,11 @@ public class Motorcycle {
         this.frame = frame;
         this.wheels = new Wheel[]{frontWheel, backWheel};
         this.currentSpeed = 0;
+        this.fuelTank = fuelTank;
+        this.frontTire = frontTire;
+        this.backTire = backTire;
     }
+
 
     public String getMake() { return make; }
     public String getModel() { return model; }
@@ -52,6 +60,8 @@ public class Motorcycle {
     public String getColor() { return color; }
     public Frame getFrame() { return frame; }
     public Wheel[] getWheels() { return wheels; }
+    public Tire getFrontTire() { return frontTire; }
+    public Tire getBackTire() { return backTire; }
 
     /**
      * Starts the motorcycle.
@@ -103,5 +113,11 @@ public class Motorcycle {
         System.out.println("Engine Size: " + engineSize + " cc");
         System.out.println("Color: " + color);
         System.out.println("Current Speed: " + currentSpeed + " mph");
+        System.out.println("Front Tire: " + frontTire);
+        System.out.println("Back Tire: " + backTire);
+    }
+
+    public FuelTank getFuelTank() {
+        return fuelTank;
     }
 }
